@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        We get each EditText field by its ID and assign it to its respected object
+//        We get each EditText field by its ID and assign it to its respective object
         firstName = (EditText)findViewById(R.id.editText4);
         lastName = (EditText)findViewById(R.id.editText5);
         titleEmp = (EditText)findViewById(R.id.editText6);
 
-//        Here we get the TextViews and assign them to their respected objects
+//        Here we get the TextViews and assign them to their respective objects
         first = (TextView)findViewById(R.id.textView4);
         last = (TextView)findViewById(R.id.textView5);
         title = (TextView)findViewById(R.id.textView6);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 //        ****** Method #1 ******
 //        If savedInstanceState is not null, means if data is available
 //        we will get the data from savedInstanceState object through getString method and save id to
-//        its respected variable.
+//        its respective variable.
 //        Here the savedInstanceState object is used which has been passed from onCreate() method.
 //        if(savedInstanceState != null) {
 //            String sFirstName = savedInstanceState.getString("firstN");
@@ -82,14 +82,12 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putString("titleE",titleEmp.getText().toString());
     }
 
-
-    
 //    ****** Method #2 ******
 //    This is second way to restore the saved data.
-//    when the state is restored this functioned is triggered.
-//    A Bundle object is passed from this method and we will get our data from this object.
-//    We check if the savedInstanceState is not null then we will get the data from it and show it in
-//    TextViews.
+    when the state is restored this functioned is triggered.
+    A Bundle object is passed from this method and we will get our data from this object.
+    We check if the savedInstanceState is not null then we will get the data from it and show it in
+    TextViews.
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
